@@ -1,11 +1,22 @@
-import pagesPartial from "./pages/pages.partial.js";
-import pixelDudePartial from "./pixel-dude/pixel-dude.partial.js";
+import { actions } from "xstate";
+import { component } from "sms-plugin---components";
+
+import App from "./components/app.svelte";
+
+const { send } = actions;
 
 export default {
-    type : "parallel",
+    initial : "running",
     
     states : {
-        pages : pagesPartial,
-        pixelDude : pixelDudePartial,
+        running : component(App, {
+            entry : [
+                send("plugin:url-context:CAPTURE"),
+                send({
+                    type : "plugin:url-context:WATCH",
+                    data : [ "note" ],
+                }),
+            ],
+        }),
     },
 };

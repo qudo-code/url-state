@@ -1,9 +1,9 @@
-import App from "./app.svelte";
+import Main from "./main.svelte";
 
 import "./styles/main.scss";
 
-const app = new App({
+const main = new Main({
     target : document.body,
 });
 
-export default app;
+export default main;

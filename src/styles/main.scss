@@ -1,3 +1,18 @@
+@import 'lib/scss-grid/main';
 @import 'util/variables';
 @import 'util/base';
 @import 'util/text';
+
+:root {
+    @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;600&display=swap');
+}
+
+body,
+html {
+    margin: 0 auto;
+    color: rgb(192, 192, 192);
+    font-family: 'Inconsolata', monospace;
+    font-size: 16px;
+    font-weight: 300;
+}
+
