@@ -1,18 +1,43 @@
 {
-  "name": "notesapp",
+  "name": "[TODO]",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "[TODO]",
+  "main": "src/main.js",
   "scripts": {
-    "test": "echo \"Error: wno test specified\" && exit 1",
-    "start": "node main.js",
-    "dev": "nodemon main.js"
+    "dev": "vite --force",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qudo-lucas/portfolio.git"
   },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qudo-lucas/portfolio/issues"
+  },
+  "homepage": "https://github.com/qudo-lucas/portfolio#readme",
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "*",
+    "@tivac/eslint-config": "^2.4.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-svelte3": "^2.7.3",
+    "sass": "^1.36.0",
+    "stylelint-config-idiomatic-order": "^8.1.0",
+    "stylelint-config-sass-guidelines": "^7.1.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-declaration-use-variable": "^1.7.2",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.18.0",
+    "svelte-preprocess": "^4.7.4",
+    "vite": "^2.4.3"
+  },
   "dependencies": {
-    "express": "^4.17.1",
-    "lz-string": "^1.4.4",
-    "nodemon": "^2.0.12"
+    "sms-plugin---components": "^1.0.1",
+    "sms-plugin---logger": "^1.0.1",
+    "state-machine-snacks": "^1.0.5",
+    "xstate": "^4.23.1"
   }
 }
