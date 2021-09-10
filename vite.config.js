@@ -9,7 +9,7 @@ export default defineConfig(({ command, mode }) => {
     return {
         resolve : {
             alias : {
-                "src/" : path.resolve(__dirname, "./src"),
+                "src/" : `${path.resolve(__dirname, "src")}/`,
             },
         },
         plugins : [

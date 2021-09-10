@@ -7,15 +7,11 @@ const { send } = actions;
 
 export default {
     initial : "running",
-    
+
     states : {
         running : component(App, {
             entry : [
-                send("plugin:url-context:CAPTURE"),
-                send({
-                    type : "plugin:url-context:WATCH",
-                    data : [ "note" ],
-                }),
+                send("plugin:url-context:DECODE"),
             ],
         }),
     },

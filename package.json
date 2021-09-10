@@ -1,5 +1,5 @@
 {
-  "name": "[TODO]",
+  "name": "url-state",
   "version": "1.0.0",
   "description": "[TODO]",
   "main": "src/main.js",
@@ -35,9 +35,11 @@
     "vite": "^2.4.3"
   },
   "dependencies": {
+    "lz-string": "^1.4.4",
     "sms-plugin---components": "^1.0.1",
     "sms-plugin---logger": "^1.0.1",
     "state-machine-snacks": "^1.0.5",
+    "svelte": "^3.42.3",
     "xstate": "^4.23.1"
   }
 }

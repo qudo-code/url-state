@@ -9,11 +9,11 @@ module.exports = {
 		sourceType: "module"
 	},
 	globals: {
-        "__dev__": "readonly",
-        "require": "readonly",
-        "import": "readonly",
-        "process": "readonly",
-    },
+		"__dev__": "readonly",
+		"require": "readonly",
+		"import": "readonly",
+		"process": "readonly",
+	},
 	plugins: ["svelte3"],
 	overrides: [
 		{
