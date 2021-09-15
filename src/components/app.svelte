@@ -22,6 +22,6 @@
 </div>
 
 <script>
-    import URLShareBar from "./url-share-bar/url-share-bar.svelte";
+    import URLShareBar from "./url/url.svelte";
     import Editor from "./editor/editor.svelte";
 </script>

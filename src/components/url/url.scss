@@ -1,0 +1,32 @@
+.url-share-bar {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 1rem 0;
+    background: black;
+    border-radius: 1rem;
+}
+
+p {
+    max-width: 80%;
+    color: orange;
+    word-wrap: break-word;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    border: 0;
+    appearance: none;
+    background: transparent;
+    color: rgb(192, 192, 192);
+    font-size: 1rem;
+}
+
+svg {
+    margin-left: 0.5rem;
+    fill: rgb(192, 192, 192);
+    stroke: rgb(192, 192, 192);
+}
