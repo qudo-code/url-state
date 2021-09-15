@@ -3,16 +3,18 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 0 1rem;
     margin: 1rem 0;
-    background: black;
+    background: #000;
     border-radius: 1rem;
+    white-space: nowrap;
 }
 
 p {
+    overflow: hidden;
     max-width: 80%;
     color: orange;
-    word-wrap: break-word;
+    text-overflow: ellipsis;
 }
 
 button {

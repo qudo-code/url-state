@@ -1,18 +1,21 @@
-textarea,
-input {
-    border: 1px solid rgb(192, 192, 192);
-    appearance: none;
-    background: transparent;
-    color: rgb(192, 192, 192);
-}
+    textarea,
+    input,
+    input:focus {
+        border: 0;
+        appearance: none;
+        background: transparent;
+        color: #fff;
+        outline: none;
+    }
 
-.name {
-    width: 100%;
-    margin: 1rem 0;
-    font-size: 2rem;
-}
+    .name {
+        width: 100%;
+        margin: 1rem 0;
+        font-family: 'Inconsolata', monospace;
+        font-size: 2rem;
+    }
 
-.data {
-    width: 100%;
-    min-height: 500px;
-}
+    .data {
+        width: 100%;
+        min-height: 500px;
+    }
