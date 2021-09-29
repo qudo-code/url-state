@@ -2,7 +2,7 @@
 @import "editor";
 </style>
 
-<input type="text" class="name" placeholder="Name..." bind:value="{data.name}">
+<input type="text" class="name" placeholder="Name..." bind:value="{data.name}"/>
 <textarea class="data" placeholder="Type here..." bind:value="{data.note}"></textarea>
 
 <script>
@@ -14,19 +14,19 @@ const data = {
 };
 
 $: service.send({
-    type : "plugin:urlContext:CHANGE",
+    type : "plugin:url-context:UPDATE",
     data,
 });
 
 $: ({
-    note = {},
+    decoded,
 } = $service.context);
 
-$: if(!data.name && note.name) {
-    data.name = note.name;
+$: if(!data.name && decoded.name) {
+    data.name = decoded.name;
 }
 
-$: if(!data.note && note.name) {
-    data.note = note.note;
+$: if(!data.note && decoded.note) {
+    data.note = decoded.note;
 }
 </script>
